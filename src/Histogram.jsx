@@ -26,7 +26,7 @@ const HistogramContainer = () => {
     fetchData();
   }, [id]);
   if (!data) {
-    return <div id="Nodata">No available data for this dataset</div>;
+    return <div id="No data">No available data for this dataset</div>;
   }
   return (
     <div id="HistogramContainerTwo">

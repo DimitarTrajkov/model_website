@@ -11,8 +11,14 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/dataset/:id" element={<ToggleVisibilityComponent />} />
-          <Route path="*" element={<Navigate to="/dataset/2" />} />
+          <Route
+            path="/dataset/:id"
+            element={<ToggleVisibilityComponent />}
+          />
+          <Route
+            path="*"
+            element={<Navigate to="/dataset/2" />}
+          />
         </Routes>
       </div>
     </Router>
