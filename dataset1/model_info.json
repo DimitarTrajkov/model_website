@@ -1,0 +1,21 @@
+{
+  "name": "Ischemic Stroke 30-Day Mortality and 30-Day Readmission Rates",
+  "link": "https://data.world/chhs/06ed38d3-b047-4ae2-aa00-2e43b5491d6e?fbclid=IwAR0pOS8Tn2z7ZTzttxhOQbQyv9LSzkAJrVSZDPw_W7EK8lke6lgB1fAAit4",
+
+  "description": "This dataset contains risk-adjusted 30-day mortality and 30-day readmission rates, quality ratings, and number of deaths / readmissions and cases for ischemic stroke treated in California hospitals from the years 2011-12 to 2014-15.",
+  "dataset_analysis": "There are 2188 instances with 10 features. Year: (from what year is the feature). This feature doesn't have null values. Count: (where is the hospital located). Includes null values when the instance is referring to the whole California or has the value “AAAA” Hospital: (hospitals name). This feature doesn't have null values. When the instances is for the whole California the feature has value “Statewide”. OSHPDID: (hospital ID). When the instance is about whole California the value of the feature is “.” Or null. (4 null values in total) Measure: (30-day Mortality or 30-day Readmission). This feature doesn’t have null values. Risk Adjusted Rate: This feature has 10 null values. Number of Deaths/Readmissions: This feature has 10 null values. Number of Cases: This feature has 10 null values. Hospital Ratings: Hospital Rating has null values for the 10 above mentioned instances and the 8 where the instances are about the whole California. (18 null instances in total) Location: Longitude and latitude for the hospital. (8 null instances when the instance is for the whole California).",
+  "creator": [
+    {
+      "url": "https://data.world/chhs",
+      "name": "California Health and Human Services"
+    }
+  ],
+  "publisher": [
+    {
+      "url": "https://data.world/chhs",
+      "name": "California Health and Human Services "
+    }
+  ],
+  "dataset_type": "csv",
+  "license": "Other"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Brain Stroke Dataset",
+  "link": "https://data.world/researchersj/brain-stroke-dataset?fbclid=IwAR3Y-rrWMYck5OoP15HJVJiihvZVvzVyUj8B7cijBO-Q3XbmQX8fMAd-n0o",
+
+  "description": "this dataset doesn't have a description",
+  "dataset_analysis": "This dataset has 600 instances each with 9 features. None of the features have null values for any instance. Each instance  contains the following features: age, gen, smoking, heart_rate, chest_pain,  cholesterol, bloodpressure, bloodsugar, stroke. The dataset contains instances with 1, 2, 3 strokes without any instance with 0 strokes(regular people). I couldn’t find a description for the features. Almost all of the features are self-describing but the feature “gen” is feature with 2 values 1 and 0 (true, false) which means is  type of gene in the patients but without any description on what gene it is.",
+  "creator": [
+    {
+      "url": "Sajid Md",
+      "name": "https://data.world/researchersj"
+    }
+  ],
+  "publisher": [
+    {
+      "url": "Sajid Md",
+      "name": "https://data.world/researchersj"
+    }
+  ],
+  "dataset_type": "csv",
+  "license": "not available"
+}

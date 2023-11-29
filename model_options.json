@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Ada boost regression",
+      "description": "ada_reg"
+    },
+    {
+      "id": 2,
+      "name": "ARD regression",
+      "description": "ard_reg"
+    },
+    {
+      "id": 3,
+      "name": "Item 3",
+      "description": "Description for Item 3"
+    },
+    {
+      "id": 4,
+      "name": "Item 4",
+      "description": "Description for Item 4"
+    },
+    {
+      "id": 5,
+      "name": "Item 5",
+      "description": "Description for Item 5"
+    }
+  ]

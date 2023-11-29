@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "AdaBoost Regression",
+    "description": "ada_reg"
+  },
+  {
+    "id": 2,
+    "name": "ARDRegression",
+    "description": "ard_reg"
+  },
+  {
+    "id": 3,
+    "name": "Bagging Regression",
+    "description": "bag_reg"
+  },
+  {
+    "id": 4,
+    "name": "Bayesian Ridge Regression",
+    "description": "bayridge_reg"
+  },
+  {
+    "id": 5,
+    "name": "Decision Tree Regression",
+    "description": "tree_reg"
+  },
+  {
+    "id": 6,
+    "name": "Elastic Net Regression",
+    "description": "elnet_reg"
+  },
+  {
+    "id": 9,
+    "name": "Hist Gradient Boosting Regression",
+    "description": "hgb_reg"
+  },
+  {
+    "id": 12,
+    "name": "Lasso Regression",
+    "description": "lasso_reg"
+  },
+  {
+    "id": 13,
+    "name": "Least Absolute Deviations Regression",
+    "description": "lad_reg"
+  },
+  {
+    "id": 14,
+    "name": "Least Angle Regression",
+    "description": "lars_reg"
+  },
+  {
+    "id": 17,
+    "name": "Orthogonal Matching Pursuit Regression",
+    "description": "omp_reg"
+  }
+]

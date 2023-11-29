@@ -1,0 +1,21 @@
+{
+  "name": "Stockport Local Health Characteristics",
+  "link": "https://data.world/datagov-uk/0cb6045e-f44f-4dcb-814b-b97840cc80c3?fbclid=IwAR3MEd33szJsu-Sv3aDVuByvmwaBBQhQQw4WYgQG1swlApnYxYKUJBYD7ck",
+
+  "description": "This dataset contains information on the prevalence of a variety of health conditions amongst Stockport residents, aggregated by LSOA. The count of individuals affected by each condition is provided, along with the GP registered population for each LSOA. The data represents a snapshot taken in June 2016. Conditions covered include: Hypertension, Anxiety, Depression, Asthma, Obesity, Diabetes, Coronary Heart Disease, Falls, Cancer, Chronic Kidney Disease, Chronic Obstructive Pulmonary Disease, Stroke/Trans-Ischemic Attack and Atrial Fibrillation.",
+  "dataset_analysis": "There are 190 instances with 18 features. There are no null values in any of the datasets. The dataset contains the following features: ogc_fid, lsoa11cd, lsoa11nm, lsoa11nmw, GPRegPop (GP registered population), Hypertens, Anxiety, Depression, Asthma, Obesity, Diabetes, CHD (Coronary Heart Disease), Fall, Cancer, CKD (Chronic Kidney Disease), COPD (Chronic Obstructive Pulmonary Disease), Stroke_TIA  (Stroke/Trans-Ischaemic Attack), AF (Atrial Fibrillation). The features lsoa11nm and lsoa11nmw have the same values with each other for every instances.ogc_fid, lsoa11cd, lsoa11nm, lsoa11nmw  have different value for every instances( 190 different values) so it doesn't give us any more info than a basic indexer.",
+  "creator": [
+    {
+      "url": "https://data.world/dataworldadmin",
+      "name": "data.world's Admin"
+    }
+  ],
+  "publisher": [
+    {
+      "url": "https://data.world/datagov-uk",
+      "name": "United Kingdom Open Data Portal"
+    }
+  ],
+  "dataset_type": "csv",
+  "license": "OGL"
+}
