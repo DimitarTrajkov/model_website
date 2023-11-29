@@ -1,0 +1,53 @@
+#GraphContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #4b527e;
+}
+
+#SideBar {
+  width: 20%; /* Set the sidebar width to one-fourth of the viewport width */
+  background-color: #2e4374; /* Sidebar background color */
+  color: #fff; /* Sidebar text color */
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#Title {
+  margin-top: 15px;
+  margin-left: 6%;
+}
+
+#LeftPart {
+  width: 80%;
+  margin-left: 20%; /* Set margin-left to the width of the sidebar */
+  padding: 20px;
+}
+#Graph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Style for the select elements */
+select {
+  width: 90% ;
+  background-color: #7c81ad;
+  color: #e5c3a6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the multiple select element */
+select[multiple] {
+  height: 250px;
+}
+#Chart {
+  width: 30vw;
+}

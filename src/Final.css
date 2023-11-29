@@ -1,0 +1,156 @@
+#ToggleVisibility {
+  font-family: Arial, sans-serif;
+  color: wheat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+#SideBar {
+  flex: 1;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  background-color: #0a2404;
+  overflow-y: auto;
+  padding-left: 20px;
+}
+
+#LeftSide {
+  flex: 6;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-left: 30px;
+  background: linear-gradient(to bottom, #081c03, #000000);
+  overflow-y: auto;
+}
+
+#InfoComponent {
+  width: 95%;
+  border-radius: 7px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 10px;
+}
+#InfoContainer1 {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+#GraphContainer {
+  width: 95%;
+  background-color: #000000;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 7px;
+}
+#GraphContainer1 {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+#HistogramContainer {
+  width: 95%;
+  background-color: #000000;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+button {
+  width: 40px;
+  background-color: #000000;
+  color: wheat;
+  border: 3px solid black;
+  border-radius: 7px;
+}
+.onlyArrow {
+  width: 95%;
+  border-radius: 7px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #616f39;
+}
+h1 {
+  font-size: 40px;
+}
+h3,
+label {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+p {
+  font-size: 16px;
+}
+#modeDiv {
+  display: flex;
+  align-items: baseline;
+}
+select {
+  background-color: #0f2e09;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  color: wheat;
+  margin-top: 5px;
+}
+#Chart {
+  width: 95%;
+}
+.titleToggle {
+  margin: 10px;
+  margin-left: 0px;
+}
+a,
+p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#Nodata {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+#histButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}

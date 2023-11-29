@@ -1,0 +1,21 @@
+{
+  "name": "All Payer In-Hospital/30-Day Acute Stroke Mortality Rates by Hospital (SPARCS)",
+  "link": "https://data.world/healthdatany/r29i-yr49?fbclid=IwAR03liwBhR_XWfdnkj3tWBKjdHDljDTiY9YiSDSsTXdgwVR7OOxfBQuPNa0",
+
+  "description": "The dataset contains hospital stroke designation and Coverdell registry participation status, acute stroke discharges counts (numerators, denominators), observed, expected and risk-adjusted acute stroke in-hospital/30-day post admission mortality rates with corresponding 95% confidence intervals. Mortality rates risk adjustment was based on the methodology developed by the New York State Department of Health. The purpose of this data set is reporting of hospital-specific risk adjusted acute stroke mortality rates (RAMR) to inform hospitals, to aid initiatives to improve hospital quality performance and measurement, and to identify performance outliers for public reporting.",
+  "dataset_analysis": "The dataset includes 137 instances each having 14 features. The instances have the following features: Year, Facility Id, Hospital Name, Hospital County, Stroke Designated Center, Coverdell Hospital, Stroke Cases, Died, Observed Rate, Expected Rate, Risk Adjusted Rate, Lower 95CI RAR, Upper 95CI RAR, Compare to State. There is only one instance  referring for the whole  New York with null values for the Stroke Designated Center, Coverdell Hospital, Expected Rate, Lower 95CI RAR, Upper 95CI RAR, Compare to State. The values for the Hospital Name and Hospital County are “Statewide” and the Facility Id value is “0”. All the features in all the other instances have non-null values. In every instance the value for the feature Year is 2013.",
+  "creator": [
+    {
+      "url": "https://data.world/healthdatany",
+      "name": "Health Data New York"
+    }
+  ],
+  "publisher": [
+    {
+      "url": "https://data.world/healthdatany",
+      "name": "Health Data New York"
+    }
+  ],
+  "dataset_type": "csv",
+  "license": "Other"
+}

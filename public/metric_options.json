@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Mean Absolute Error",
+    "description": "Mean_Absolute_Error"
+  },
+  {
+    "id": 2,
+    "name": "Mean Squared Error",
+    "description": "Mean_Squared_Error"
+  },
+  {
+    "id": 3,
+    "name": "Root Mean Squared Error",
+    "description": "Root_Mean_Squared_Error"
+  },
+  {
+    "id": 4,
+    "name": "Median Absolute Error",
+    "description": "Median_Absolute_Error"
+  },
+  {
+    "id": 5,
+    "name": "Mean Percentage Error",
+    "description": "Mean_Percentage_Error"
+  },
+  {
+    "id": 6,
+    "name": "Mean Absolute Percentage Error",
+    "description": "Mean_Absolute_Percentage_Error"
+  },
+  {
+    "id": 7,
+    "name": "Symmetric Mean Absolute Percentage Error",
+    "description": "Symmetric_Mean_Absolute_Percentage_Error"
+  },
+  {
+    "id": 8,
+    "name": "Relative Squared Error",
+    "description": "Relative_Squared_Error"
+  },
+  {
+    "id": 9,
+    "name": "Theils U",
+    "description": "Theils_U"
+  },
+  {
+    "id": 10,
+    "name": "Mean Error",
+    "description": "Mean_Error"
+  },
+  {
+    "id": 11,
+    "name": "Adjusted R-squared",
+    "description": "Adjusted_R-squared"
+  },
+  {
+    "id": 12,
+    "name": "Explained Variance Score",
+    "description": "Explained_Variance_Score"
+  },
+  {
+    "id": 13,
+    "name": "Jarque-Bera Test Statistic",
+    "description": "Jarque-Bera_Test_Statistic"
+  },
+  {
+    "id": 14,
+    "name": "Kolmogorov-Smirnov Statistic",
+    "description": "Kolmogorov-Smirnov_Statistic"
+  },
+  {
+    "id": 15,
+    "name": "R-squared",
+    "description": "R-squared"
+  }
+]

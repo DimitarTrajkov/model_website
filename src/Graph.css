@@ -1,0 +1,56 @@
+#GraphContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+#SideBar {
+  width: 20%;
+  height: 100%;
+  background-color: #2e4374;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+#LeftPart {
+  width: 80%;
+  height: 100%;
+  background-color: #4b527e;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+#Title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#Chart {
+  width: 90%;
+  margin-top: 20px;
+  background-color: red;
+}
+
+label {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+select {
+  width: 90%;
+  padding: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+  background-color: #7c81ad;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 10px;
+}

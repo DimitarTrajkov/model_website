@@ -1,0 +1,21 @@
+{
+  "name": "NCHS - Potentially Excess Deaths from the Five Leading Causes of Death",
+  "link": "https://data.world/us-hhs-gov/112731d8-6a9c-4835-a4cd-598f21f13a39?fbclid=IwAR3u0z3XT-PptT1TZBcgEQKL8uinfPU7jkeV2A1g566U18Sa7OyWGVOc1YU",
+
+  "description": "MMWR Surveillance Summary 66 (No. SS-1):1-8 found that nonmetropolitan areas have significant numbers of potentially excess deaths from the five leading causes of death. These figures accompany this report by presenting information on potentially excess deaths in nonmetropolitan and metropolitan areas at the state level. They also add additional years of data and options for selecting different age ranges and benchmarks. Potentially excess deaths are defined in MMWR Surveillance Summary 66(No. SS-1):1-8 as deaths that exceed the numbers that would be expected if the death rates of states with the lowest rates (benchmarks) occurred across all states. They are calculated by subtracting expected deaths for specific benchmarks from observed deaths. Not all potentially excess deaths can be prevented; some areas might have characteristics that predispose them to higher rates of death. However, many potentially excess deaths might represent deaths that could be prevented through improved public health programs that support healthier behaviors and neighborhoods or better access to health care services. Mortality data for U.S. residents come from the National Vital Statistics System. Estimates based on fewer than 10 observed deaths are not shown and shaded yellow on the map. Underlying cause of death is based on the International Classification of Diseases, 10th Revision (ICD-10) Heart disease (I00-I09, I11, I13, and I20–I51) Cancer (C00–C97) Unintentional injury (V01–X59 and Y85–Y86) Chronic lower respiratory disease (J40–J47) Stroke (I60–I69) Locality (nonmetropolitan vs. metropolitan) is based on the Office of Management and Budget’s 2013 county-based classification scheme. Benchmarks are based on the three states with the lowest age and cause-specific mortality rates. Potentially excess deaths for each state are calculated by subtracting deaths at the benchmark rates (expected deaths) from observed deaths. Users can explore three benchmarks: “2010 Fixed” is a fixed benchmark based on the best performing States in 2010. “2005 Fixed” is a fixed benchmark based on the best performing States in 2005. “Floating” is based on the best performing States in each year so change from year to year. SOURCES CDC/NCHS, National Vital Statistics System, mortality data (see http://www.cdc.gov/nchs/deaths.htm); and CDC WONDER (see http://wonder.cdc.gov). REFERENCES Moy E, Garcia MC, Bastian B, Rossen LM, Ingram DD, Faul M, Massetti GM, Thomas CC, Hong Y, Yoon PW, Iademarco MF. Leading Causes of Death in Nonmetropolitan and Metropolitan Areas – United States, 1999-2014. MMWR Surveillance Summary 2017; 66(No. SS-1):1-8. Garcia MC, Faul M, Massetti G, Thomas CC, Hong Y, Bauer UE, Iademarco MF. Reducing Potentially Excess Deaths from the Five Leading Causes of Death in the Rural United States. MMWR Surveillance Summary 2017; 66(No. SS-2):1–7.",
+  "dataset_analysis": "The dataset has 205920 instances with 13 features each. Each instance has the following features: Year,  Cause of Death, State, State FIPS Code, HHS Region, Age Range, Benchmark, Locality,   Observed Deaths, Population, Expected Deaths, Potentially Excess Deaths, Percent Potentially Excess Deaths. 10212 instances have null values for the features: “Observed Deaths”, “Expected Deaths”, “Potentially Excess Deaths”, “Percent Potentially Excess Deaths”, and the rest (195708 instances) don’t have any features with null values. So in conclusion 10212 instances don’t have any significant data apart from the obvious default data (place, year, age group and so on). After removing the instances with null values the data ends up fairly balanced.",
+  "creator": [
+    {
+      "url": "https://data.world/datagov-us",
+      "name": "U.S. Department of Health & Human Services"
+    }
+  ],
+  "publisher": [
+    {
+      "url": "https://data.world/datagov-us",
+      "name": "U.S. Department of Health & Human Services"
+    }
+  ],
+  "dataset_type": "csv",
+  "license": "Public Domain"
+}

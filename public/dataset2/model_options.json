@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "name": "AdaBoost Regression",
+    "description": "ada_reg"
+  },
+  {
+    "id": 2,
+    "name": "ARDRegression",
+    "description": "ard_reg"
+  },
+  {
+    "id": 3,
+    "name": "Bagging Regression",
+    "description": "bag_reg"
+  },
+  {
+    "id": 4,
+    "name": "Bayesian Ridge Regression",
+    "description": "bayridge_reg"
+  },
+  {
+    "id": 5,
+    "name": "Decision Tree Regression",
+    "description": "tree_reg"
+  },
+  {
+    "id": 6,
+    "name": "Elastic Net Regression",
+    "description": "elnet_reg"
+  },
+  {
+    "id": 7,
+    "name": "Gaussian Process Regression",
+    "description": "gp_reg"
+  },
+  {
+    "id": 8,
+    "name": "Gradient Boosting Regression",
+    "description": "gb_reg"
+  },
+  {
+    "id": 9,
+    "name": "Hist Gradient Boosting Regression",
+    "description": "hgb_reg"
+  },
+  {
+    "id": 10,
+    "name": "KNeighbors Regression",
+    "description": "knn_reg"
+  },
+  {
+    "id": 11,
+    "name": "Lasso Regression",
+    "description": "lasso_reg"
+  },
+  {
+    "id": 12,
+    "name": "Least Absolute Deviations Regression",
+    "description": "lad_reg"
+  },
+  {
+    "id": 13,
+    "name": "Least Angle Regression",
+    "description": "lars_reg"
+  },
+  {
+    "id": 14,
+    "name": "Linear Regression",
+    "description": "linreg_reg"
+  },
+  {
+    "id": 15,
+    "name": "Orthogonal Matching Pursuit Regression",
+    "description": "omp_reg"
+  },
+  {
+    "id": 16,
+    "name": "Passive Aggressive Regression",
+    "description": "pa_reg"
+  },
+  {
+    "id": 17,
+    "name": "RANSAC Regression",
+    "description": "ransac_reg"
+  },
+  {
+    "id": 28,
+    "name": "Random Forest Regression",
+    "description": "rf_reg"
+  },
+  {
+    "id": 19,
+    "name": "Ridge Regression",
+    "description": "ridge_reg"
+  },
+  {
+    "id": 20,
+    "name": "SGD Regression",
+    "description": "sgd_reg"
+  },
+  {
+    "id": 21,
+    "name": "Theil Sen Regression",
+    "description": "theilsen_reg"
+  },
+  {
+    "id": 22,
+    "name": "Tweedie Regression",
+    "description": "tw_reg"
+  },
+  {
+    "id": 23,
+    "name": "XGBoost Regression",
+    "description": "xgb_reg"
+  }
+]
