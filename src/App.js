@@ -6,19 +6,14 @@ import {
   Navigate,
 } from "react-router-dom";
 import ToggleVisibilityComponent from "./toggleVisibility.jsx";
+
 const App = () => {
   return (
     <Router>
       <div>
         <Routes>
-          <Route
-            path="/dataset/:id"
-            element={<ToggleVisibilityComponent />}
-          />
-          <Route
-            path="*"
-            element={<Navigate to="/dataset/2" />}
-          />
+          <Route path="/" element={<ToggleVisibilityComponent />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
