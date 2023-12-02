@@ -18,21 +18,21 @@ const Home = () => {
 
   return (
     <div className="HomeContainer">
-        <input
-          id="searchBar"
-          type="text"
-          placeholder="Search by name"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+      <input
+        id="searchBar"
+        type="text"
+        placeholder="Search by name"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
 
-        <ul>
-          {filteredData.map((item) => (
-            <li key={item.id}>
-              <Link to={`/dataset/${item.id}`}>{item.name}</Link>
-            </li>
-          ))}
-        </ul>
+      <ul>
+        {filteredData.map((item) => (
+          <li key={item.id}>
+            <Link to={`/${item.id}`}>{item.name}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

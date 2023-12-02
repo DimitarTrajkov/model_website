@@ -5,7 +5,7 @@ import axios from "axios";
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-const HistogramContainer = () => {
+const HistogramContainer = ({ num }) => {
   const [data, setData] = useState(null);
   const { id } = useParams();
 
@@ -14,7 +14,7 @@ const HistogramContainer = () => {
       try {
         // Fetch model options
         const responce = await axios.get(
-          `/dataset${id}/histograms/histogram.json`
+          `/model_website/dataset${num}/histograms/histogram.json`
         );
         setData(responce.data);
       } catch (error) {
@@ -24,7 +24,7 @@ const HistogramContainer = () => {
     };
 
     fetchData();
-  }, [id]);
+  }, [num]);
   if (!data) {
     return <div id="No data">No available data for this dataset</div>;
   }

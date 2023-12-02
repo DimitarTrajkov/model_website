@@ -17,5 +17,11 @@
     }
   ],
   "dataset_type": "csv",
-  "license": "Public Domain"
+  "license": "Public Domain",
+  "models": [
+    {
+      "name": "none",
+      "url": ""
+    }
+  ]
 }

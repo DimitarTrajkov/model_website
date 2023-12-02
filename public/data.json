@@ -1,46 +1,46 @@
 [
   {
     "id": 1,
-    "name": "dataset1"
+    "name": "Ischemic Stroke Mortality"
   },
   {
     "id": 2,
-    "name": "dataset2"
+    "name": "Local Health Characteristics"
   },
   {
     "id": 3,
-    "name": "dataset3"
+    "name": "In-Hospital/30-Day Acute Stroke"
   },
   {
     "id": 4,
-    "name": "dataset4"
+    "name": "Potentially Excess Deaths"
   },
   {
     "id": 5,
-    "name": "dataset5"
+    "name": "Brain Stroke"
   },
   {
     "id": 6,
-    "name": "dataset6"
+    "name": "Brain Stroke"
   },
   {
     "id": 7,
-    "name": "dataset7"
+    "name": "Cerebral Stroke Prediction"
   },
   {
     "id": 8,
-    "name": "dataset8"
+    "name": "Stroke CT Images"
   },
   {
     "id": 9,
-    "name": "dataset9"
+    "name": "Acute Ischemic Stroke MRI"
   },
   {
     "id": 10,
-    "name": "dataset10"
+    "name": "Mortality from stroke"
   },
   {
     "id": 11,
-    "name": "dataset11"
+    "name": "Lesion-Symptom Mapping in Brain Tumor"
   }
 ]

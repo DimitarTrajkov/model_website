@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
-const ChartContainer = ({ metrics, models, oneMetric }) => {
+const ChartContainer = ({ num, metrics, models, oneMetric }) => {
   const { id } = useParams();
   const [data, setData] = useState([]);
   if (!models) {
@@ -28,7 +28,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
         const modelData = await Promise.all(
           models.map(async (model) => {
             const response = await axios.get(
-              `/dataset${id}/${model.description}_lite.json`
+              `/model_website/dataset${num}/${model.description}_lite.json`
             );
             return response.data;
           })
@@ -40,7 +40,8 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
     };
 
     fetchData();
-  }, [models, oneMetric, id]);
+  }, [models, metrics, oneMetric, num]);
+  console.log(metrics);
 
   const transformedData = (data) => {
     return data.map((value, index) => ({
@@ -51,7 +52,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
   const dataSets = [];
   if (oneMetric) {
     for (let i = 0; i < models.length; i++) {
-      if (data[i] != undefined) {
+      if (data[i] !== undefined) {
         const dataSet = {
           type: "line",
           name: "train data, model: " + models[i].name,
@@ -64,7 +65,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
       }
     }
     for (let i = 0; i < models.length; i++) {
-      if (data[i] != undefined) {
+      if (data[i] !== undefined) {
         const dataSet = {
           type: "line",
           name: "test data, model: " + models[i].name,
@@ -78,7 +79,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
     }
   } else {
     for (let i = 0; i < metrics.length; i++) {
-      if (data[0] != undefined) {
+      if (data[0] !== undefined) {
         const dataSet = {
           type: "line",
           name: "test data, metric: " + metrics[i].name,
@@ -92,7 +93,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
     }
 
     for (let i = 0; i < metrics.length; i++) {
-      if (data[i] != undefined) {
+      if (data[0] !== undefined) {
         const dataSet = {
           type: "line",
           name: "train data, metric: " + metrics[i].name,
@@ -108,7 +109,7 @@ const ChartContainer = ({ metrics, models, oneMetric }) => {
   if (!data) {
     return <div>Loading...</div>;
   }
-  const color = "#e5c3a6";
+  const color = "#fffddd";
   const graphTitle = oneMetric ? metrics[0].name : models[0].name;
   const options = {
     theme: "dark2",

@@ -12,8 +12,11 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<ToggleVisibilityComponent />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route
+            path="/model_website/"
+            element={<ToggleVisibilityComponent />}
+          />
+          <Route path="*" element={<Navigate to="/model_website/" />} />
         </Routes>
       </div>
     </Router>

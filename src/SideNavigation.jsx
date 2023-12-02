@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-
-const SideNavigation = () => {
+const SideNavigation = ({ naprajid }) => {
   // Fetch data based on id from your data source
   const { id } = useParams();
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/data.json")
+    fetch("/model_website/data.json")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, [id]);
@@ -18,14 +17,16 @@ const SideNavigation = () => {
   }
   return (
     <div id="SideBar">
-      <h3>Choose a dataset</h3>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id}>
-            <Link to={`/dataset/${item.id}`}>{item.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <h3 id="choose_dataset">CHOOSE A DATASET</h3>
+      {data.map((item) => (
+        <button
+          className="navBarButton"
+          key={item.id}
+          onClick={() => naprajid(item.id, item.name)}
+        >
+          {item.name}
+        </button>
+      ))}
     </div>
   );
 };

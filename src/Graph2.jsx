@@ -4,29 +4,27 @@ import axios from "axios";
 import ChartContainer from "./Canva";
 import Switch from "@mui/material/Switch";
 
-const GraphComponent = () => {
+const GraphComponent = ({ num }) => {
   const [oneMetric, setOneMetric] = useState(true);
-  const { id } = useParams();
   const [metricOptions, setMetricOptions] = useState(null);
   const [modelOptions, setModelOptions] = useState([]);
   const [metricOptionsArray, setMetricOptionsArray] = useState([
     "Mean_Absolute_Error",
   ]);
   const [modelOptionsArray, setModelOptionsArray] = useState(["ada_reg"]);
-
   // useeffect to get all the models that are available
   useEffect(() => {
     const fetchData = async () => {
       try {
         // Fetch model options
         const modelResponse = await axios.get(
-          `/dataset${id}/model_options.json`
+          `/model_website/dataset${num}/model_options.json`
         );
         setModelOptions(modelResponse.data);
 
         // Fetch metric options
         const metricResponse = await axios.get(
-          `/dataset${id}/metric_options.json`
+          `/model_website/dataset${num}/metric_options.json`
         );
         setMetricOptions(metricResponse.data);
       } catch (error) {
@@ -36,7 +34,7 @@ const GraphComponent = () => {
     };
 
     fetchData();
-  }, [id]);
+  }, [num]);
   const handleSelectMetricChange = (event) => {
     const selectedValue = event.target.value;
     if (oneMetric) {
@@ -105,7 +103,6 @@ const GraphComponent = () => {
         .filter((option) => metricOptionsArray.includes(option.description))
         .map((option) => option.name)
         .join(", ");
-  console.log(metricOptionsArray);
   return (
     <div id="GraphContainer1">
       <div>
@@ -119,7 +116,15 @@ const GraphComponent = () => {
       <select id="selectOptionForModels" onChange={handleMultipleSelectChange}>
         {/*<option value="">Select an option</option>*/}
         {modelOptions.map((item) => (
-          <option key={item.id} value={item.description}>
+          <option
+            key={item.id}
+            value={item.description}
+            style={{
+              backgroundColor: modelOptionsArray.includes(item.description)
+                ? "#444444"
+                : "#222222",
+            }}
+          >
             {item.name}
           </option>
         ))}
@@ -128,7 +133,15 @@ const GraphComponent = () => {
       <label htmlFor="selectOptionForMetric">Select a scoring metric:</label>
       <select id="selectOptionForMetric" onChange={handleSelectMetricChange}>
         {metricOptions.map((item) => (
-          <option key={item.id} value={item.description}>
+          <option
+            key={item.id}
+            value={item.description}
+            style={{
+              backgroundColor: metricOptionsArray.includes(item.description)
+                ? "#444444"
+                : "#222222",
+            }}
+          >
             {item.name}
           </option>
         ))}
@@ -139,6 +152,7 @@ const GraphComponent = () => {
 
       <div id="Chart">
         <ChartContainer
+          num={num}
           metrics={metricOptions.filter((option) =>
             metricOptionsArray.includes(option.description)
           )}

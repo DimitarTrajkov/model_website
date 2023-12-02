@@ -9,10 +9,13 @@ import GraphComponent from "./Graph2";
 import HistogramContainer from "./Histogram";
 
 const ToggleVisibilityComponent = () => {
-  const { id } = useParams(); // Extracting the id from the route parameter
   const [isVisible1, setIsVisible1] = useState(true);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
+  const [idd, setIdd] = useState(2);
+  const [nameOfDataset, setNameOfDataset] = useState(
+    "Local Health Characteristics"
+  );
 
   const toggleVisibility1 = () => {
     setIsVisible1(!isVisible1);
@@ -24,14 +27,18 @@ const ToggleVisibilityComponent = () => {
   const toggleVisibility3 = () => {
     setIsVisible3(!isVisible3);
   };
+  const naprajid = (num, name) => {
+    setIdd(num);
+    setNameOfDataset(name);
+  };
   return (
     <div id="ToggleVisibility">
-      <SideNavigation />
+      <SideNavigation naprajid={naprajid} />
       <div id="LeftSide">
-        <h1 id="Title">Dataset {id}</h1>
+        <h1 id="Title">{nameOfDataset}</h1>
         {isVisible1 ? (
           <div id="InfoComponent">
-            <InfoComponent />
+            <InfoComponent num={idd} />
             <button onClick={toggleVisibility1}>
               <ArrowUpwardIcon />
             </button>
@@ -46,7 +53,7 @@ const ToggleVisibilityComponent = () => {
         )}
         {isVisible2 ? (
           <div id="GraphContainer">
-            <GraphComponent />
+            <GraphComponent num={idd} />
             <button onClick={toggleVisibility2}>
               <ArrowUpwardIcon />
             </button>
@@ -63,11 +70,11 @@ const ToggleVisibilityComponent = () => {
         )}
         {isVisible3 ? (
           <div id="HistogramContainer">
-            <HistogramContainer />
+            <HistogramContainer num={idd} />
             <div id="histButton">
-            <button onClick={toggleVisibility3}>
-              <ArrowUpwardIcon />
-            </button>
+              <button onClick={toggleVisibility3}>
+                <ArrowUpwardIcon />
+              </button>
             </div>
           </div>
         ) : (
