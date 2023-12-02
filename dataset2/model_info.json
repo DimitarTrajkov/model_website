@@ -17,5 +17,99 @@
     }
   ],
   "dataset_type": "csv",
-  "license": "OGL"
+  "license": "OGL",
+  "models": [
+    {
+      "name": "AdaBoost Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html"
+    },
+    {
+      "name": "ARDRegression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ARDRegression.html"
+    },
+    {
+      "name": "Bagging Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html"
+    },
+    {
+      "name": "Bayesian Ridge Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html"
+    },
+    {
+      "name": "Decision Tree Regression",
+      "url": "https://scikit-learn.org/stable/auto_examples/tree/plot_tree_regression.html"
+    },
+    {
+      "name": "Elastic Net Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html"
+    },
+    {
+      "name": "Gaussian Process Regression",
+      "url": "https://scikit-learn.org/stable/modules/gaussian_process.html"
+    },
+    {
+      "name": "Gradient Boosting Regression",
+      "url": "https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_regression.html"
+    },
+    {
+      "name": "Hist Gradient Boosting Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingRegressor.html"
+    },
+    {
+      "name": "KNeighbors Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html"
+    },
+    {
+      "name": "Lasso Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html"
+    },
+    {
+      "name": "Least Absolute Deviations Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LassoLars.html"
+    },
+    {
+      "name": "Least Angle Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lars.html"
+    },
+    {
+      "name": "Linear Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"
+    },
+    {
+      "name": "Orthogonal Matching Pursuit Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.OrthogonalMatchingPursuit.html"
+    },
+    {
+      "name": "Passive Aggressive Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PassiveAggressiveRegressor.html"
+    },
+    {
+      "name": "RANSAC Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RANSACRegressor.html"
+    },
+    {
+      "name": "Random Forest Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html"
+    },
+    {
+      "name": "Ridge Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html"
+    },
+    {
+      "name": "SGD Regression",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html"
+    },
+    {
+      "name": "Theil Sen Regression",
+      "url": "https://scikit-learn.org/stable/auto_examples/linear_model/plot_theilsen.html"
+    },
+    {
+      "name": "Tweedie Regression",
+      "url": "https://scikit-learn.org/stable/auto_examples/linear_model/plot_tweedie_regression_insurance_claims.html"
+    },
+    {
+      "name": "XGBoost Regression",
+      "url": "https://xgboost.readthedocs.io/en/stable/parameter.html"
+    }
+  ]
 }

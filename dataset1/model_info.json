@@ -17,5 +17,11 @@
     }
   ],
   "dataset_type": "csv",
-  "license": "Other"
+  "license": "Other",
+  "models": [
+    {
+      "name": "none",
+      "url": ""
+    }
+  ]
 }
